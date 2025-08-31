@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.header p {
+    color: #2575fc;
+    font-weight: 600;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.input-box {
+    flex: 1;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+}
+
+.result.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.result h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.age-result {
+    display: flex;
+    justify-content: space-around;
+}
+
+.age-box {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.age-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.age-label {
+    font-size: 14px;
+}
+
+.error {
+    color: #e74c3c;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: left;
+    display: none;
+}
+
+.error.show {
+    display: block;
+}
+
+.internship-info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .age-result {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .age-box {
+        width: 80%;
+    }
+}
