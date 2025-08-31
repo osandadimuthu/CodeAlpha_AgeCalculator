@@ -1,2 +1,104 @@
 # CodeAlpha_AgeCalculator
 The Age Calculator is a web-based application that allows users to calculate their exact age in years, months, and days based on their date of birth. It features a responsive design, input validation, and an attractive user interface.
+
+Key Features
+    User-Friendly Interface:
+
+        Clean, modern design with gradient backgrounds
+
+        Intuitive input fields for day, month, and year
+
+        Clear button to trigger the calculation
+
+    Input Validation:
+
+        Validates day input (1-31)
+
+        Validates month input (1-12)
+
+        Validates year input (1900-current year)
+
+        Checks for valid dates (e.g., prevents February 30)
+
+        Prevents future dates from being entered
+
+        Displays specific error messages for invalid inputs
+
+    Accurate Calculations:
+
+        Uses JavaScript's Date object for precise calculations
+
+        Accounts for different month lengths and leap years
+
+        Calculates exact age in years, months, and days
+
+    Visual Feedback:
+
+        Animated results display
+
+        Attractive result boxes with gradient backgrounds
+
+        Clear error messages that appear when needed
+
+    Responsive Design:
+
+        Works perfectly on both desktop and mobile devices
+
+        Adapts layout for different screen sizes
+
+    Professional Presentation:
+
+        Includes CodeAlpha branding as required
+
+        Clean, professional appearance suitable for an internship project
+
+Technical Implementation
+    The calculator is built with:
+
+        HTML5 for structure and semantic markup
+
+        CSS3 for styling, including gradients, animations, and responsive design
+
+        JavaScript for date calculations, validation, and DOM manipulation
+
+        Font Awesome icons for visual enhancement
+
+Code Structure
+    The application follows best practices with:
+
+        Clean, well-commented code
+
+        Separation of concerns (HTML for structure, CSS for presentation, JavaScript for functionality)
+
+        Semantic HTML elements
+
+        CSS variables for consistent styling
+
+        JavaScript functions for specific tasks (validation, calculation, UI updates)
+
+How to Use
+    Enter your birth date in the day, month, and year fields
+
+    Click the "Calculate Age" button
+
+    View your exact age displayed in years, months, and days
+
+    If you enter invalid data, error messages will guide you to correct it
+
+Compliance with Requirements
+    This Age Calculator meets all CodeAlpha task requirements:
+
+        ✅ Uses HTML for the input form
+
+        ✅ Uses CSS for styling
+
+        ✅ Uses JavaScript for age calculation with Date object
+
+        ✅ Implements DOM manipulation
+
+        ✅ Works with JavaScript Date & Time
+
+        ✅ Includes input validation
+
+        ✅ Has a professional, responsive design
+
